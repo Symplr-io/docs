@@ -34,7 +34,8 @@
             "pages": [
               "buid-app-using-figma-design",
               "build-app-using-ai-prompt",
-              "mobile-app-security"
+              "mobile-app-security",
+              "integration-agent"
             ]
           },
           {
