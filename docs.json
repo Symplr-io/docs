@@ -28,7 +28,12 @@
         "tab": "Guides",
         "pages": [
           "introducing-symplr-io",
-          "quick-start",
+          {
+            "group": "Quick Start",
+            "pages": [
+              "untitled-page"
+            ]
+          },
           "core-concepts",
           {
             "group": "Symplr Features",
