@@ -1,4 +1,53 @@
 ---
-title: 'Mobile App Security'
+title: "Mobile App Security"
 ---
 
+## **Overview**
+
+Symplr provides a set of advanced mobile security protections aligned with the **OWASP Mobile Application Security Verification Standard (MASVS)**. These capabilities are available out-of-the-box and can be enabled to help reduce common risks in generated applications.
+
+### **Security Controls**
+
+**Root / Jailbreak Detection**
+
+Detects compromised devices where OS protections are bypassed, increasing risk of runtime attacks, memory inspection, and credential theft. Enables risk-based restrictions.
+
+**SSL Pinning**
+
+Prevents MITM attacks by restricting trust to known certificates or public keys, protecting sensitive network communication.
+
+**Binary Protection (Tamper Detection)**
+
+Detects modified or repackaged apps that may bypass controls or inject malicious code. Ensures runtime integrity.
+
+**Emulator Detection**
+
+Identifies execution in emulator environments commonly used for reverse engineering and automated attacks.
+
+**App Obfuscation**
+
+Makes reverse engineering more difficult by obscuring code structure, protecting business logic and internal workflows.
+
+**Hide API Keys and Secrets**
+
+Prevents exposure of sensitive credentials by storing secrets server-side and using short-lived tokens in the app.
+
+**Disable Screen Capture**
+
+Reduces risk of sensitive data leakage by preventing screenshots and screen recording.
+
+**Disable Native Console Logging**
+
+Prevents sensitive data exposure through logs in production environments.
+
+**Disable / Restrict Deep Linking**
+
+Prevents abuse of deep links to bypass authentication or trigger unintended actions.
+
+**Optimize App Size (Production)**
+
+Reduces attack surface by removing unused code, debug symbols, and unnecessary libraries.
+
+**Force Version Upgrade**
+
+Ensures outdated and potentially vulnerable app versions cannot be used.
