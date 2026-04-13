@@ -37,7 +37,7 @@
               "mobile-app-security",
               "integration-agent",
               "accessibility-standards",
-              "untitled-page"
+              "screen-library"
             ]
           },
           {
@@ -46,8 +46,7 @@
               {
                 "group": "AppStudio - Designer",
                 "pages": []
-              },
-              "untitled-page"
+              }
             ]
           },
           {
