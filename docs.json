@@ -29,6 +29,7 @@
         "pages": [
           "introducing-symplr-io",
           "quick-start",
+          "core-concepts",
           {
             "group": "Symplr Features",
             "pages": [
@@ -55,6 +56,14 @@
                 "group": "AppStudio - Feature Demo's",
                 "pages": []
               }
+            ]
+          },
+          {
+            "group": "Get Help",
+            "pages": [
+              "contact-support",
+              "frequently-asked-questions",
+              "blogs"
             ]
           },
           {
