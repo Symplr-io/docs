@@ -42,7 +42,13 @@
           },
           {
             "group": "AppStudio",
-            "pages": []
+            "pages": [
+              {
+                "group": "AppStudio - Designer",
+                "pages": []
+              },
+              "untitled-page"
+            ]
           },
           {
             "group": "Getting started",
