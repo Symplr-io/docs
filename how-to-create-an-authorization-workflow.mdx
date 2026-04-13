@@ -1,4 +1,53 @@
 ---
-title: 'How to create an Authorization Workflow'
+title: "How to create an Authorization Workflow"
 ---
 
+## **Introduction**
+
+An application offers functionalities for both guest users and logged-in users. To access the features available to logged-in users, you need a valid access token. The authorization workflow automatically manages the distribution of this token to other dependent workflows.
+
+<Frame>
+  ![Image](/images/image-2.png)
+</Frame>
+
+If you are a beginner to APIs and interested in how they work refer [<u>here</u>](https://www.geeksforgeeks.org/what-is-an-api/ "https://www.geeksforgeeks.org/what-is-an-api/").
+
+## **Prerequisites**
+
+- Login (authentication) API Specification
+
+## **Steps**
+
+Follow these step-by-step instructions to complete the task:
+
+### **Step 1: Create a workflow**
+
+1. Navigate to Workflow Library\
+   Click on the “Workflow Library” menu item on the left-side main menu
+2. Select a Library you want to add the Workflow
+3. Click on the “Create” button and enter a name for the workflow
+
+### **Step 2: Add the API**
+
+1. Click on the “Add Step” button
+2. Enter a name for the step
+3. Click on “Import API Spec”
+4. Select the API specification and Import
+
+### **Step 3: Select the output**
+
+1. Click on the “Output” button on the step
+2. Select the parameters you want to get as output of the workflow
+
+### **Step 4: Save as Authentication Workflow**
+
+1. Check the “Authentication Workflow” checkbox
+2. Click on the “Save” button
+
+## **Tips and Troubleshooting**
+
+## **Additional Resources**
+
+- Testing workflows
+- Adding workflows to the app
+- Workflow data mapping
