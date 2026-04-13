@@ -26,7 +26,8 @@
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [
+        "pages": [
+          "introducing-symplr-io",
           {
             "group": "Getting started",
             "pages": [
