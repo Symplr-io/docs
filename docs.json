@@ -28,6 +28,15 @@
         "tab": "Guides",
         "pages": [
           "introducing-symplr-io",
+          "quick-start",
+          {
+            "group": "Symplr Features",
+            "pages": [
+              "buid-app-using-figma-design",
+              "build-app-using-ai-prompt",
+              "mobile-app-security"
+            ]
+          },
           {
             "group": "Getting started",
             "pages": [
