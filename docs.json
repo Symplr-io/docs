@@ -41,6 +41,10 @@
             ]
           },
           {
+            "group": "AppStudio",
+            "pages": []
+          },
+          {
             "group": "Getting started",
             "pages": [
               "index",
