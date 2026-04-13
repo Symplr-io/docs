@@ -46,11 +46,28 @@
             "pages": [
               {
                 "group": "AppStudio - Designer",
-                "pages": []
+                "pages": [
+                  "quick-start-guide",
+                  "understanding-designer-ui",
+                  "import-your-figma-designs-to-symplr-studio",
+                  {
+                    "group": "Designer Documents",
+                    "pages": [
+                      {
+                        "group": "Workflow",
+                        "pages": [
+                          "how-to-create-an-authorization-workflow"
+                        ]
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "group": "AppStudio - Widgets",
-                "pages": []
+                "pages": [
+                  "how-to-use-an-as-list-view"
+                ]
               },
               {
                 "group": "AppStudio - Feature Demo's",
@@ -63,7 +80,12 @@
             "pages": [
               "contact-support",
               "frequently-asked-questions",
-              "blogs"
+              {
+                "group": "Symplr Blogs",
+                "pages": [
+                  "build-fintech-apps-faster-than-ever-from-figma-design-to-fully-working-app-with-symplr"
+                ]
+              }
             ]
           },
           {
