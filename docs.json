@@ -46,6 +46,14 @@
               {
                 "group": "AppStudio - Designer",
                 "pages": []
+              },
+              {
+                "group": "AppStudio - Widgets",
+                "pages": []
+              },
+              {
+                "group": "AppStudio - Feature Demo's",
+                "pages": []
               }
             ]
           },
