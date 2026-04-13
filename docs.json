@@ -47,10 +47,10 @@
             ]
           },
           {
-            "group": "AppStudio",
+            "group": "Symplr Studio",
             "pages": [
               {
-                "group": "AppStudio - Designer",
+                "group": "Symplr Studio - Designer",
                 "pages": [
                   "quick-start-guide",
                   "understanding-designer-ui",
@@ -69,13 +69,13 @@
                 ]
               },
               {
-                "group": "AppStudio - Widgets",
+                "group": "Symplr Studio - Widgets",
                 "pages": [
                   "how-to-use-an-as-list-view"
                 ]
               },
               {
-                "group": "AppStudio - Feature Demo's",
+                "group": " Symplr Studio - Feature Demo's",
                 "pages": []
               }
             ]
