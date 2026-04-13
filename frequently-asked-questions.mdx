@@ -1,4 +1,67 @@
 ---
-title: 'Frequently Asked Questions'
+title: "Frequently Asked Questions"
 ---
 
+## **The Symplr Workflow Builder for Arazzo**
+
+### **Q-01: What’s the difference between Arazzo and OpenAPI?**
+
+#### **Quick Tip:**
+
+Arazzo describes how to combine and sequence API calls into a complete workflow — like planning your dining experience — while OpenAPI is the menu that lists each dish (API) and its details.
+
+#### **Answer:**
+
+Think of **OpenAPI** as a restaurant’s menu. It lists all the dishes (API endpoints) you can order, along with their ingredients (parameters), preparation details (methods), and what you’ll get when it’s served (responses). The menu tells you what’s available and how each item works, but it doesn’t tell you which dishes to choose or in what order to eat them.
+
+**Arazzo**, on the other hand, is like your dining experience. It guides you through a sequence: start with a drink, have an appetizer, choose your main course, and finish with dessert — sometimes making choices along the way (e.g., “If there’s cheesecake, order it, otherwise get ice cream”). It can even adapt your wine choice based on the main dish you select — red for steak, white for seafood. Arazzo connects multiple “menu items” (API operations) into a complete, goal-driven journey, describing how to use APIs together in a step-by-step workflow.
+
+### **Q-02: Can Arazzo handle API call failures gracefully?**
+
+#### **Quick Tip:**
+
+Arazzo can retry, reroute, or gracefully exit when an API step fails — keeping workflows reliable and user-friendly.
+
+#### **Answer:**
+
+Yes. Arazzo supports building resilient workflows with built-in failure handling. You can define **Failure Action Objects** for any step, specifying what to do if it fails — such as retrying the API call a set number of times, switching to an alternate workflow for recovery, or gracefully ending the process with an error message.
+
+**Example:** If a payment processing API call fails due to a network timeout, the workflow could automatically retry twice. If it still fails, it could trigger a backup payment provider API, or route the user to a “Payment Failed” screen with guidance on next steps.
+
+This approach ensures that even when an API call goes wrong, the overall workflow remains predictable and robust.
+
+### **Q-03: How does the Symplr Workflow Builder for Arazzo help with API orchestration?**
+
+#### **Quick Tip:**
+
+Design visually, validate precisely, generate code instantly, and share workflows effortlessly — that’s Symplr Workflow Builder for Arazzo.
+
+#### **Answer:**
+
+The Symplr Workflow Builder offers a **visual, no-code environment** for orchestrating APIs into seamless workflows. It not only lets you arrange steps in sequence or parallel but also define **success criteria** for each step — checking HTTP status codes (e.g., `200 OK`) and validating specific JSON fields with runtime expressions. This ensures the workflow proceeds only when the right data is returned, making it precise, reliable, and resilient.
+
+Beyond orchestration, Symplr accelerates development by **generating ready-to-use code** from your workflows, so you can move from design to implementation instantly. It also allows you to **publish and share workflow documentation** directly to platforms like Confluence, keeping your team aligned and your API processes transparent.
+
+**Example:** If an “Order Status” API returns `status: "shipped"`, the workflow can continue to send a tracking email. If it returns anything else, it can retry, pause, or branch into a different process.
+
+### **Q-04: Is the Symplr Workflow Builder for Arazzo only for developers?**
+
+#### **Quick Tip:**
+
+Symplr Workflow Builder’s visual editor lets all teams collaborate — and easily share workflows via Confluence for wider visibility and alignment.
+
+#### **Answer:**
+
+No — the Symplr Workflow Builder is designed to **empower both technical and non-technical users**. Its intuitive visual, drag-and-drop interface lets business analysts, product managers, and other stakeholders easily participate in designing and understanding API workflows. This collaborative approach helps bridge the gap between business requirements and technical implementation, ensuring everyone stays aligned throughout the development process.
+
+Additionally, workflows can be **published and shared directly to Confluence**, enabling wider collaboration and visibility across teams. This makes it easy for all stakeholders to review, comment on, and understand workflows in the context of documentation they already use.
+
+### **Q-05: How does Symplr Workflow Builder for Arazzo ensure accuracy of Workflows?**
+
+#### **Quick Tip:**
+
+Symplr Workflow Builder validates workflows against the Arazzo spec, generates and runs code, and shows inputs and outputs—all to ensure your workflows are accurate without any coding.
+
+#### **Answer:**
+
+Symplr Workflow Builder ensures workflow accuracy through multiple layers of validation. First, all workflows—whether imported or newly created—are checked against the official Arazzo specification to guarantee compliance with the standard. Next, the builder generates executable source code from the workflow and runs it, verifying that the logic works as intended. Throughout this process, inputs and outputs are clearly displayed in the interface, making it easy for users to review and validate the workflow behavior — all without writing any code.
