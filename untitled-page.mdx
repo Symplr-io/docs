@@ -2,20 +2,27 @@
 title: "Create App from a Figma Design"
 ---
 
-## Overview
+##   Overview
 
 Bringing your Figma designs into Symplr Studio allows you to seamlessly transform static UI designs into a structured, interactive application blueprint. Instead of rebuilding screens manually, Symplr intelligently interprets your design and converts it into screens, components, and a foundation for your app’s logic and navigation.
 
 This guide walks you through how to import your Figma designs and prepare them for further development within Symplr.
 
-## What are we going to build?
+With Symplr, you can:
 
-We are building an app from Figma design:
+- Import a Figma design using a URL
+- Automatically generate application screens and navigation
+- Preview, build, and run the generated application
 
-1. Build all the screen available in the Figma
-2. Navigate to other screen
+##   Quick Start (2 Minutes)
 
-## Prerequisites
+1. Copy your **Figma File URL**
+2. Import it into **Symplr**
+3. Configure application settings
+4. Review generated screens
+5. Build and run your application
+
+##   Prerequisites
 
 Before you begin, ensure you have the following:
 
@@ -23,7 +30,22 @@ Before you begin, ensure you have the following:
 - A **Symplr account** with appropriate permissions
 - Stable internet connectivity
 
-## **Importing Figma Files into Symplr**
+## ⭐ **Preparing Your Figma File**
+
+To achieve the best results, ensure your Figma file is properly structured:
+
+- Use **frames** to represent screens
+- Provide **clear and consistent screen names**
+- Avoid deeply nested groups
+- Use **reusable components** where possible
+- Apply **Auto Layout** for responsive designs
+
+<Note>
+  **Important:**\
+  Ensure your Figma file is accessible (e.g., _“Anyone with the link can view”_ or properly authorized).
+</Note>
+
+## Importing Figma Files into Symplr
 
 Importing a Figma file is the first step in using Symplr. This process allows the platform to access your design assets and prepare them for code generation.
 
@@ -62,16 +84,20 @@ Paste the copied Figma URL into the input field and click **“Continue”.** En
 **Step 4: Configure Application Settings**\
 A configuration pop-up will appear. Provide the following details:
 
-- **App Name**: Enter a unique name without spaces
-- **Theme**: Select the preferred application theme
-- **React Native Version**: Choose the appropriate version based on your project requirements
-- **Package Name**: Define the application package identifier
+- **App Name** → Used to identify your project
+- **Theme** → Defines default styling
+- **React Native Version** → Ensures compatibility
+- **Package Name** → Required for building and deployment
 
 After entering all required details, click **“Continue.”**
 
 <Frame>
   ![Image](/images/image-12.png)
 </Frame>
+
+<Note>
+  App Name must not contain spaces
+</Note>
 
 **Step 5: Initiate Import Process**
 
@@ -85,11 +111,11 @@ Symplr will begin importing the selected Figma file and processing its design el
 
 Once the import is complete, Symplr will display a **Storyboard View** showing all imported screens.
 
-Carefully review the following:
+You should see:
 
-- Screen hierarchy and structure
-- Component grouping and layout
-- Navigation flow between screens\\
+- All screens listed in the storyboard
+- No missing or broken components
+- Proper navigation between screens
 
 <Frame>
   ![Image](/images/image-14.png)
