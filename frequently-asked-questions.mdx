@@ -6,66 +6,218 @@ The FAQ section provides answers to commonly encountered questions and issues wh
 
 Use this page to quickly troubleshoot problems and find guidance before contacting support.
 
+## Quick Start
+
 <AccordionGroup>
-  <Accordion title="What’s the difference between Arazzo and OpenAPI?">
-    #### **Quick Tip:**
-
-    Arazzo describes how to combine and sequence API calls into a complete workflow — like planning your dining experience — while OpenAPI is the menu that lists each dish (API) and its details.
-
-    #### **Answer:**
-
-    Think of **OpenAPI** as a restaurant’s menu. It lists all the dishes (API endpoints) you can order, along with their ingredients (parameters), preparation details (methods), and what you’ll get when it’s served (responses). The menu tells you what’s available and how each item works, but it doesn’t tell you which dishes to choose or in what order to eat them.
-
-    **Arazzo**, on the other hand, is like your dining experience. It guides you through a sequence: start with a drink, have an appetizer, choose your main course, and finish with dessert — sometimes making choices along the way (e.g., “If there’s cheesecake, order it, otherwise get ice cream”). It can even adapt your wine choice based on the main dish you select — red for steak, white for seafood. Arazzo connects multiple “menu items” (API operations) into a complete, goal-driven journey, describing how to use APIs together in a step-by-step workflow.
+  <Accordion title="What is Symplr used for?">
+    Symplr is a no-code platform that allows you to generate **mobile** / **Web** applications without development experience. You can create applications by importing a Figma file or by using AI prompts.
   </Accordion>
 
-  <Accordion title="Can Arazzo handle API call failures gracefully?">
-    #### **Quick Tip:**
-
-    Arazzo can retry, reroute, or gracefully exit when an API step fails — keeping workflows reliable and user-friendly.
-
-    #### **Answer:**
-
-    Yes. Arazzo supports building resilient workflows with built-in failure handling. You can define **Failure Action Objects** for any step, specifying what to do if it fails — such as retrying the API call a set number of times, switching to an alternate workflow for recovery, or gracefully ending the process with an error message.
-
-    **Example:** If a payment processing API call fails due to a network timeout, the workflow could automatically retry twice. If it still fails, it could trigger a backup payment provider API, or route the user to a “Payment Failed” screen with guidance on next steps.
-
-    This approach ensures that even when an API call goes wrong, the overall workflow remains predictable and robust.
+  <Accordion title="Do I need coding experience to use Symplr?">
+    No. Symplr is designed for users without coding experience. The platform automatically generates application screens, navigation, and structure based on your input.
   </Accordion>
 
-  <Accordion title="How does the Symplr Workflow Builder for Arazzo help with API orchestration?">
-    #### **Quick Tip:**
-
-    Design visually, validate precisely, generate code instantly, and share workflows effortlessly — that’s Symplr Workflow Builder for Arazzo.
-
-    #### **Answer:**
-
-    The Symplr Workflow Builder offers a **visual, no-code environment** for orchestrating APIs into seamless workflows. It not only lets you arrange steps in sequence or parallel but also define **success criteria** for each step — checking HTTP status codes (e.g., `200 OK`) and validating specific JSON fields with runtime expressions. This ensures the workflow proceeds only when the right data is returned, making it precise, reliable, and resilient.
-
-    Beyond orchestration, Symplr accelerates development by **generating ready-to-use code** from your workflows, so you can move from design to implementation instantly. It also allows you to **publish and share workflow documentation** directly to platforms like Confluence, keeping your team aligned and your API processes transparent.
-
-    **Example:** If an “Order Status” API returns `status: "shipped"`, the workflow can continue to send a tracking email. If it returns anything else, it can retry, pause, or branch into a different process.
+  <Accordion title="What type of applications can I build with Symplr?">
+    Symplr allows you to generate mobile/web applications based on UI designs or AI prompts, including multi-screen apps with navigation and interactive components.
   </Accordion>
 
-  <Accordion title="Is the Symplr Workflow Builder for Arazzo only for developers?">
-    #### **Quick Tip:**
+  <Accordion title="Is there a limit to the number of screens I can generate?">
+    No. The number of screens depends on the complexity of your design or prompt. Larger designs may take longer to process.
+  </Accordion>
+</AccordionGroup>
 
-    Symplr Workflow Builder’s visual editor lets all teams collaborate — and easily share workflows via Confluence for wider visibility and alignment.
+## Figma Integration or AI Generation
 
-    #### **Answer:**
+<AccordionGroup>
+  <Accordion title="How can I generate an application in Symplr?">
+    You can generate an application in two ways:
 
-    No — the Symplr Workflow Builder is designed to **empower both technical and non-technical users**. Its intuitive visual, drag-and-drop interface lets business analysts, product managers, and other stakeholders easily participate in designing and understanding API workflows. This collaborative approach helps bridge the gap between business requirements and technical implementation, ensuring everyone stays aligned throughout the development process.
+    - Importing a **Figma File URL**
+    - Using **AI prompts** to describe your application
 
-    Additionally, workflows can be **published and shared directly to Confluence**, enabling wider collaboration and visibility across teams. This makes it easy for all stakeholders to review, comment on, and understand workflows in the context of documentation they already use.
+    Both methods generate a complete application structure.
   </Accordion>
 
-  <Accordion title="How does Symplr Workflow Builder for Arazzo ensure accuracy of Workflows?">
-    #### **Quick Tip:**
+  <Accordion title="What happens after I import a Figma file or use AI prompts?">
+    Symplr generates a **Storyboard View (Blueprint View)** that displays all screens, screen names, and navigation flow of the application.
+  </Accordion>
 
-    Symplr Workflow Builder validates workflows against the Arazzo spec, generates and runs code, and shows inputs and outputs—all to ensure your workflows are accurate without any coding.
+  <Accordion title="Can I update my design after importing it?">
+    Yes. You can modify your Figma file and re-import it to regenerate an updated **Storyboard View**.
+  </Accordion>
 
-    #### **Answer:**
+  <Accordion title="Which method should I use — Figma import or AI prompt?">
+    Follow one of the below with your requirement
 
-    Symplr Workflow Builder ensures workflow accuracy through multiple layers of validation. First, all workflows—whether imported or newly created—are checked against the official Arazzo specification to guarantee compliance with the standard. Next, the builder generates executable source code from the workflow and runs it, verifying that the logic works as intended. Throughout this process, inputs and outputs are clearly displayed in the interface, making it easy for users to review and validate the workflow behavior — all without writing any code.
+    - Use **Figma import** if you already have a design
+    - Use **AI prompts** if you want to generate an app without a design
+  </Accordion>
+
+  <Accordion title="Can I edit the application after generating it using AI?">
+    Yes. You can review the generated screens in the **Storyboard View** and make updates by refining your prompt or re-generating the application.
+  </Accordion>
+
+  <Accordion title="What happens if my Figma design is complex?">
+    Complex designs may take longer to process, and some components may require adjustments to ensure accurate screen generation.
+  </Accordion>
+</AccordionGroup>
+
+## View Storyboard & Screens
+
+<AccordionGroup>
+  <Accordion title="What is the Storyboard View?">
+    The **Storyboard View (Blueprint View)** is a visual representation of your application, showing all screens and their navigation connections.
+  </Accordion>
+
+  <Accordion title="Can I view individual screens in detail?">
+    Yes. You can navigate to the **“Pages” tab** and select screens from the **“Screens” panel** to view each screen individually.
+  </Accordion>
+
+  <Accordion title="Can I edit screens directly in Symplr?">
+    Yes. You can open individual screens in Symplr and make adjustments directly within the platform.
+
+    For more significant design changes, you can update your Figma file or AI prompt and regenerate the application to reflect those updates.
+  </Accordion>
+
+  <Accordion title="How is navigation between screens created?">
+    Navigation is automatically generated based on the structure and relationships defined in your Figma design or AI prompt.
+
+    You can also manually add or update navigation between screens directly from the **Storyboard View**, giving you full control over the application flow.
+  </Accordion>
+
+  <Accordion title="What should I do if navigation is incorrect?">
+    If the navigation is incorrect, you can update it directly in the **Storyboard View** by modifying or adding navigation between screens.
+
+    If the issue originates from the design or structure, you can update your Figma file or AI prompt and regenerate the application to apply the changes.
+  </Accordion>
+</AccordionGroup>
+
+## Build & Run App
+
+<AccordionGroup>
+  <Accordion title="Can I build and run the application within Symplr?">
+    Yes. You can build and run the application directly within Symplr from the **“Build & Run App”** Can I run the application on my mobile device?section.
+  </Accordion>
+
+  <Accordion title="Can I run the application on my mobile device?">
+    Yes. You can run the application on a local device by scanning a QR code using the **Expo Go** application.
+  </Accordion>
+
+  <Accordion title="What happens if the build fails?">
+    It will display an error message to the user. The build failures may occur due to configuration issues or unsupported elements. Review your setup and try rebuilding the application.
+  </Accordion>
+
+  <Accordion title="Can I rebuild the application after making changes?">
+    Yes. You can rebuild the application after updating your design or configuration.
+  </Accordion>
+</AccordionGroup>
+
+## Download Code & test
+
+<AccordionGroup>
+  <Accordion title="Can I download the generated code?">
+    Yes. Symplr allows you to download the generated application code, which can be run on an emulator.
+  </Accordion>
+
+  <Accordion title="Does Symplr support automated testing?">
+    Yes. Symplr can generate automated test cases for your application, allowing you to validate functionality and ensure the application works as expected.
+  </Accordion>
+
+  <Accordion title="How can I test my application?">
+    You can test your application by:
+
+    - Running it within Symplr
+    - Running it on a mobile device using Expo Go
+    - Running the downloaded code in an emulator and executing automated test cases
+  </Accordion>
+
+  <Accordion title="Can I modify the downloaded code?">
+    Yes. The generated code can be edited and customized in your local development environment.
+  </Accordion>
+
+  <Accordion title="What is included in the downloaded code package?">
+    The package includes application code and generated test cases.
+  </Accordion>
+
+  <Accordion title="Can I run the application without downloading the code?">
+    Yes. You can run the application directly within Symplr or on a local device using Expo Go.
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Why are some screens missing after import?">
+    This may happen if the Figma design is not properly structured (e.g., missing frames or inconsistent layout).
+  </Accordion>
+
+  <Accordion title="Why is my application not running on my device?">
+    This may happen you have not followed the steps correctly
+
+    Ensure that:
+
+    - Your device and system are connected to the same network
+    - Expo Go is installed and updated
+    - The QR code is scanned correctlySupport
+  </Accordion>
+
+  <Accordion title="Why does my design look different in Symplr?">
+    Differences may occur due to layout inconsistencies or unsupported design elements in Figma.
+  </Accordion>
+
+  <Accordion title="Why are some components not generated correctly?">
+    This may happen if the components are deeply nested or not structured properly in Figma.
+  </Accordion>
+
+  <Accordion title="Why is my QR code not working?">
+    Ensure the following to make it success
+
+    - Expo Go is installed
+    - The QR code has not expired
+  </Accordion>
+</AccordionGroup>
+
+## Performance
+
+<AccordionGroup>
+  <Accordion title="How long does it take to generate an application?">
+    It typically takes a few minutes, depending on the complexity of the design or prompt.
+  </Accordion>
+
+  <Accordion title="Does Symplr support large or complex projects?">
+    Yes, but complex designs may require additional time and proper structuring for best results.
+  </Accordion>
+</AccordionGroup>
+
+## Account & Usage
+
+<AccordionGroup>
+  <Accordion title="Do I need to log in to use Symplr?">
+    Yes. A valid Symplr account is required to import designs and generate applications.
+  </Accordion>
+
+  <Accordion title="Can I access my projects later?">
+    Yes. Your projects are saved and can be accessed from your Symplr dashboard.
+  </Accordion>
+</AccordionGroup>
+
+## Support
+
+<AccordionGroup>
+  <Accordion title="How do I contact support?">
+    You can contact support by:
+
+    - Using the **Help button** in the applicationWhat information should I provide when contacting support?
+    - Sending an email to [symplr@101digital.io](mailto:symplr@101digital.io)
+  </Accordion>
+
+  <Accordion title="What information should I provide when contacting support?">
+    Include:
+
+    - Project / App Name
+    - Project / App Link
+    - Description of the issue
+    - Steps to reproduce
+    - Screenshots or recordings
   </Accordion>
 </AccordionGroup>
