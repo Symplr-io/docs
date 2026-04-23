@@ -68,31 +68,35 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
 
 <AccordionGroup>
   <Accordion title="How can I generate an application in Symplr?">
-    You can generate an application in two ways:
-
-    - Importing a **Figma File URL**
-    - Using **AI prompts** to describe your application
-
-    Both methods generate a complete application structure.
+    You can generate an application in Symplr using either a Figma design or AI prompts, depending on your preference.\
+    \
+    - **Import a Figma File URL** \
+     Provide a Figma file link to automatically convert your design into application screens and navigation.\
+    \
+    - **Use AI Prompts** \
+     Describe your application using prompts, and Symplr will generate the screens and structure based on your input.
   </Accordion>
 
   <Accordion title="What happens after I import a Figma file or use AI prompts?">
-    Symplr generates a **Storyboard View (Blueprint View)** that displays all screens, screen names, and navigation flow of the application.
+    Symplr generates a **Blueprint View **that displays all screens, screen names, and navigation flow of the application.
   </Accordion>
 
   <Accordion title="Can I update my design after importing it?">
-    Yes. You can modify your Figma file and re-import it to regenerate an updated **Storyboard View**.
+    Yes. You can modify your Figma file and re-import it to regenerate an updated **Blueprint View**. refer [here](https://docs.101studio.co/untitled-page#importing-figma-files-into-symplr)
   </Accordion>
 
   <Accordion title="Which method should I use — Figma import or AI prompt?">
-    Choose one based on your requirement:
-
-    - Use **Figma import** if you already have a design
-    - Use **AI prompts** if you want to generate an app without a design
+    The best method depends on whether you already have a design or want to create an application from scratch.\
+    \
+    - **Use Figma import** \
+     If you already have a Figma design, this option allows you to convert your existing UI screens into a functional application.\
+    \
+    - **Use AI prompts** \
+     If you don’t have a design, you can describe your application using prompts, and Symplr will generate the screens and structure for you.
   </Accordion>
 
   <Accordion title="Can I edit the application after generating it using AI?">
-    Yes. You can review the generated screens in the **Storyboard View** and make updates by refining your prompt or re-generating the application.
+    Yes. You can review the generated screens in the **Blueprint View** and make updates by refining your prompt or re-generating the application.
   </Accordion>
 
   <Accordion title="What happens if my Figma design is complex?">
@@ -108,7 +112,14 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
   </Accordion>
 
   <Accordion title="Can I view individual screens in detail?">
-    Yes. You can navigate to the **“Pages” tab** and select screens from the **“Screens” panel** to view each screen individually.
+    Yes, Symplr allows you to view and inspect each screen individually after the import process.\
+    \
+    Follow the Below Steps to View Screens:\
+    \
+    1. Navigate to the **Blueprint View** after importing your design \
+    2. Click on the **“Pages”** tab from the main interface \
+    3. Locate the **“Screens”** panel, which lists all available screens \
+    4. Select a screen to view it in detail in the main display area
   </Accordion>
 
   <Accordion title="Can I edit screens directly in Symplr?">
@@ -120,17 +131,56 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
   <Accordion title="How is navigation between screens created?">
     Navigation is automatically generated based on the structure and relationships defined in your Figma design or AI prompt.
 
-    You can also manually add or update navigation between screens directly from the **Storyboard View**, giving you full control over the application flow.
+    You can also manually add or update navigation between screens directly from the **Blueprint View**, giving you full control over the application flow.
   </Accordion>
 
   <Accordion title="What should I do if navigation is incorrect?">
-    If the navigation is incorrect, you can update it directly in the **Storyboard View** by modifying or adding navigation between screens.
+    If the navigation between screens is incorrect, you can update it directly from the **Blueprint View** or modify your source and regenerate the application.
 
-    If the issue originates from the design or structure, you can update your Figma file or AI prompt and regenerate the application to apply the changes.
+    **Option 1: Update navigation in the Blueprint View**
+
+    1. Navigate to the **Blueprint View** of your application  
+
+    2. Identify the screen where the navigation needs to be updated  
+
+    3. Click on the **(\+) icon** on the screen card to add a new connection  
+
+    4. In the **“Add to Storyboard”** dialog, select **“Screen”**  
+
+    5. Choose the target screen from the list or create a new one  
+
+    6. Select the appropriate **event** (e.g., onPress, onLoad) to define when the navigation should trigger  
+
+    7. Save and verify the updated navigation flow  
+
+    **Option 2: Update the source and regenerate**
+
+    If the issue is due to your design or prompt:
+
+    - Update your **Figma file** (e.g., screen structure or navigation logic), or  
+
+    - Refine your **AI prompt** to better define the navigation flow  
+
+    After making changes:
+
+    1. Re-import the Figma file or regenerate the application. refer [here](https://docs.101studio.co/untitled-page#importing-figma-files-into-symplr)
+
+    2. Review the **Blueprint View** to confirm the navigation is correct  
   </Accordion>
 
   <Accordion title="Can I add new screens to my application?">
-    Yes. You can add new screens to your application and connect them within the **Storyboard View**.
+    Yes, you can add new screens to your application directly from the **Blueprint View** and connect them to your existing flow.\
+    \
+    **Follow the Below Steps:**\
+    \
+    1. Navigate to the **Blueprint View** of your application \
+    2. Click on the **(\+) icon** on the screen where you want to add a new connection \
+    3. In the **“Add to Storyboard”** dialog, select **“Screen”** \
+    4. Choose an existing screen or select **“Add Blank Screen”** to create a new one \
+    5. Select the appropriate **event** (e.g., onPress, onLoad) to define when the screen should be triggered \
+    6. Save and verify the updated flow \
+    \
+    This allows you to extend your application by adding new screens and connecting them seamlessly.
   </Accordion>
 
   <Accordion title="Can I connect APIs to my application?">
@@ -138,7 +188,18 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
   </Accordion>
 
   <Accordion title="Can I configure workflows for screens?">
-    Yes. You can define workflows for each screen to control logic, interactions, and navigation within your application.
+    Yes, you can configure workflows for screens directly from the **Blueprint View** to define actions such as API calls and backend logic.\
+    \
+    **Follow the Below Steps:**\
+    \
+    1. Navigate to the **Blueprint View** of your application \
+    2. Click on the **(\+) icon** on the screen where you want to add a workflow \
+    3. In the **“Add to Storyboard”** dialog, select **“Workflow”** \
+    4. In the **Add Workflow** screen, switch to the **“Workflow Catalogue”** tab \
+    5. Search for an existing workflow or choose one from the list \
+    6. Select the workflow and add it to your screen \
+    \
+    Once added, the workflow will be connected to the screen and can be used to handle actions such as API calls and data processing.
   </Accordion>
 
   <Accordion title="Can I manage APIs and workflows for each screen separately?">
@@ -150,11 +211,32 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
 
 <AccordionGroup>
   <Accordion title="Can I build and run the application within Symplr?">
-    Yes. You can build and run the application directly within Symplr from the **“Build & Run App”** section.
+    Yes, you can build and run your application directly within Symplr without needing a local setup.\
+    \
+    **Follow the Below Steps:**\
+    \
+    1. Navigate to the **Blueprint View** of your application \
+    2. Click on the **Build & Run App **option in the top-right corner \
+    3. In the panel, click **“Build”** under **Build & Run New App** to start the build process \
+    4. Wait for the build to complete \
+    5. Once the build is successful, the application will run within the Symplr environment \
+    \
+    You can also use the **“Load”** option under **Load Latest App** to quickly run the most recent build.
   </Accordion>
 
   <Accordion title="Can I run the application on my mobile device?">
-    Yes. You can run the application on a local device by scanning a QR code using the **Expo Go** application.
+    Yes, you can run your application on a mobile device using the **Expo Go** app.\
+    \
+    Follow the Below Steps:\
+    \
+    1. Navigate to the **Blueprint View** of your application \
+    2. Click on the **“Run App on Your Device”** option in the top-right corner \
+    3. A **QR code** will be generated for your application \
+    4. Install the **Expo Go** app on your mobile device (if not already installed) \
+    5. Open Expo Go and scan the QR code \
+    6. The application will load and run on your device \
+    \
+    This allows you to test your application on a real device and verify its behavior before deployment.
   </Accordion>
 
   <Accordion title="What happens if the build fails?">
@@ -166,7 +248,19 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
   </Accordion>
 
   <Accordion title="Can I download the generated code?">
-    Yes. Symplr allows you to download the generated application code, which can be run on an emulator.
+    Yes, Symplr allows you to download the generated application code for use in your local development environment.\
+    \
+    Follow the Below Steps:\
+    \
+    1. Navigate to the **Blueprint View** of your application \
+    2. Click on **Developer Tools** in the top-right corner \
+    3. Enable the **“Generate Test Cases”** toggle (optional, if you want to include automated tests) \
+    4. Locate the **“Download Code”** section in the panel \
+    5. Click **“Download”** to request the generated code \
+    6. The generated code will be sent to your registered email address \
+    7. Open the email and download the code package \
+    \
+    Once downloaded, you can extract the files and run the application locally using your preferred development setup.
   </Accordion>
 
   <Accordion title="Does Symplr support automated testing?">
@@ -174,11 +268,18 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
   </Accordion>
 
   <Accordion title="How can I test my application?">
-    You can test your application by:
-
-    - Running it within Symplr
-    - Running it on a mobile device using Expo Go
-    - Running the downloaded code in an emulator and executing automated test cases
+    You can test your application in Symplr using multiple methods, depending on your testing needs.\
+    \
+    - **Run within Symplr** \
+     Build and run the application directly in the platform to quickly verify screens, navigation, and functionality.\
+    \
+    - **Run on a mobile device** \
+     Use the **Expo Go** app to scan the QR code and test the application on a real device.\
+    \
+    - **Run locally using downloaded code** \
+     Download the generated code, run it in an emulator, and execute automated test cases for more advanced testing.\
+    \
+    Choose the method that best fits your testing scenario—from quick validation to full testing with automation.
   </Accordion>
 
   <Accordion title="Can I modify the downloaded code?">
@@ -198,7 +299,18 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
 
 <AccordionGroup>
   <Accordion title="Can I apply themes to my application?">
-    Yes. You can set and update themes for your project, which control the overall styling and appearance of your application.
+    Yes, Symplr allows you to apply and customize themes to control the look and feel of your application.\
+    \
+    Follow the Below Steps:\
+    \
+    1. Navigate to the **Theme** section from the left-hand menu \
+    2. Select **“Tokens”** or another category (e.g., Color, Typography, Shadow) \
+    3. View or edit existing theme values such as colors, borders, etc..\
+    4. Click the **“\+ Add”** button to create new theme tokens if needed \
+    5. Choose the appropriate type (e.g., Color, Number, String, Boolean) \
+    6. Update the values to match your desired design \
+    \
+    Once configured, the theme settings will be applied across your application to ensure a consistent visual style.
   </Accordion>
 
   <Accordion title="Can I change the theme after creating the project?">
