@@ -323,7 +323,26 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
 
 <AccordionGroup>
   <Accordion title="Why are some screens missing after import?">
-    This may happen if the Figma design is not properly structured (e.g., missing frames or inconsistent layout).
+    This may occur if certain parts of your Figma design are not structured in a way that Symplr can recognize as screens.
+
+    Common reasons include:
+
+    - Screens are not defined using **frames**
+    - Frames are nested incorrectly or grouped instead of structured as screens
+    - Inconsistent or unclear naming of screens
+    - Screens placed outside the main page structure
+
+    To ensure all screens are imported correctly:
+
+    - Use **frames** to represent each screen
+    - Ensure each screen is clearly named and organized
+    - Avoid grouping screens inside other frames unnecessarily
+    - Keep screens structured at a consistent hierarchy level
+
+    After making these updates:
+
+    - Update your Figma file
+    - Re-import it into Symplr to regenerate the Blueprint View
   </Accordion>
 
   <Accordion title="Why is my application not running on my device?">
@@ -338,7 +357,20 @@ Find answers to commonly encountered questions and issues when using Symplr. Use
   </Accordion>
 
   <Accordion title="Why does my design look different in Symplr?">
-    Differences may occur due to layout inconsistencies or unsupported design elements in Figma.
+    Differences may occur if certain design elements in your Figma file are not fully supported or are structured in a way that affects how they are interpreted by Symplr.
+
+    Common reasons include:
+
+    - Use of unsupported or complex components
+    - Deeply nested groups or layers
+    - Missing or inconsistent Auto Layout configurations
+    - Differences in spacing, alignment, or constraints
+
+    To improve design accuracy:
+
+    - Structure screens using clear **frames**
+    - Simplify deeply nested groups and layers
+    - Use standard and reusable components where possible
   </Accordion>
 
   <Accordion title="Why are some components not generated correctly?">
