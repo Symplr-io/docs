@@ -52,13 +52,6 @@
                 ]
               }
             ]
-          },
-          {
-            "group": "Create Apps from Figma Designs",
-            "pages": [
-              "overview",
-              "step-by-step"
-            ]
           }
         ]
       }
