@@ -12,11 +12,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://mintlify.com/docs"
-        },
-        {
           "anchor": "Blog",
           "icon": "newspaper",
           "href": "https://mintlify.com/blog"
@@ -34,7 +29,6 @@
               "caffd"
             ]
           },
-          "core-concepts",
           {
             "group": "Symplr Features",
             "pages": [
@@ -47,40 +41,6 @@
             ]
           },
           {
-            "group": "Symplr Studio",
-            "pages": [
-              {
-                "group": "Symplr Studio - Designer",
-                "pages": [
-                  "quick-start-guide",
-                  "understanding-designer-ui",
-                  "import-your-figma-designs-to-symplr-studio",
-                  {
-                    "group": "Designer Documents",
-                    "pages": [
-                      {
-                        "group": "Workflow",
-                        "pages": [
-                          "how-to-create-an-authorization-workflow"
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Symplr Studio - Widgets",
-                "pages": [
-                  "how-to-use-an-as-list-view"
-                ]
-              },
-              {
-                "group": " Symplr Studio - Feature Demo's",
-                "pages": []
-              }
-            ]
-          },
-          {
             "group": "Get Help",
             "pages": [
               "Contact-Support",
@@ -90,41 +50,7 @@
                 "pages": [
                   "build-fintech-apps-faster-than-ever-from-figma-design-to-fully-working-app-with-symplr"
                 ]
-              },
-              "cs"
-            ]
-          },
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development",
-              "security"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              }
             ]
           },
           {
@@ -132,26 +58,6 @@
             "pages": [
               "overview",
               "step-by-step"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]
