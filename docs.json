@@ -88,5 +88,8 @@
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   },
-  "favicon": "/images/Logo.png"
+  "logo": {
+    "light": "/images/Logo.png",
+    "dark": "/images/Logo.png"
+  }
 }
