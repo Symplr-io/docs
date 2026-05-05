@@ -89,8 +89,8 @@
     }
   },
   "logo": {
-    "light": "/images/Logo.png",
-    "dark": "/images/Logo.png"
+    "light": "/images/Logo1.png",
+    "dark": "/images/Logo1.png"
   },
-  "favicon": "/images/SymplrLogo.png"
+  "favicon": "/images/BrowserLogo.png"
 }
