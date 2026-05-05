@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Symplr Documents",
+  "name": "Symplr Documentation",
   "colors": {
     "primary": "#473BD9",
     "light": "#05F5FF",
@@ -88,7 +88,7 @@
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   },
-  "favicon": "/images/BrowserLogo.png",
+  "favicon": "/images/Logo2.jpg",
   "logo": {
     "light": "/images/Logo2.jpg",
     "dark": "/images/Logo2.jpg"
