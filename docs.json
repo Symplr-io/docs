@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "mint",
   "name": "Symplr Documents",
   "colors": {
     "primary": "#16A34A",
@@ -92,5 +92,5 @@
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   },
-  "favicon": "/images/SymplrLogo.png"
+  "favicon": "/images/Logo.png"
 }
