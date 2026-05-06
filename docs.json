@@ -8,15 +8,6 @@
     "dark": "#473BD9"
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://mintlify.com/blog"
-        }
-      ]
-    },
     "tabs": [
       {
         "tab": "Introduction",
