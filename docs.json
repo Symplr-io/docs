@@ -25,11 +25,13 @@
           {
             "group": "Quick Start",
             "pages": [
-              "caffd"
+              "caffd",
+              "create-application-using-ai-prompt",
+              "create-application-using-templates"
             ]
           },
           {
-            "group": "Symplr Features",
+            "group": "Core Features",
             "pages": [
               "features-overview",
               "mobile-app-security"
