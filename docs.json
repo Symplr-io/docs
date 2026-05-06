@@ -34,14 +34,48 @@
             "group": "Core Features",
             "pages": [
               "features-overview",
+              "manage-projects",
+              "blueprint-view",
+              "screen-library",
+              "workflows-and-apis",
+              "themes-and-customization"
+            ]
+          },
+          {
+            "group": "Build & Test Application",
+            "pages": [
+              "build-and-run-applications",
+              "run-on-device-with-expo-go"
+            ]
+          },
+          {
+            "group": "Code Export & Local Development",
+            "pages": [
+              "code-generation-settings",
+              "download-code",
+              "run-applications-locally"
+            ]
+          },
+          {
+            "group": "Integrations & Configuration",
+            "pages": [
+              "git-hub-integration",
+              "database-configuration",
+              "authentication-configuration",
+              "download-application-definition"
+            ]
+          },
+          {
+            "group": "Security & Reliability",
+            "pages": [
               "mobile-app-security"
             ]
           },
           {
             "group": "Get Help",
             "pages": [
-              "Contact-Support",
-              "frequently-asked-questions"
+              "frequently-asked-questions",
+              "Contact-Support"
             ]
           }
         ]
