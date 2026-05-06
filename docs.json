@@ -32,11 +32,7 @@
             "group": "Symplr Features",
             "pages": [
               "features-overview",
-              "buid-app-using-figma-design",
-              "mobile-app-security",
-              "integration-agent",
-              "accessibility-standards",
-              "screen-library"
+              "mobile-app-security"
             ]
           },
           {
