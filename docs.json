@@ -7,6 +7,13 @@
     "light": "#05F5FF",
     "dark": "#473BD9"
   },
+  "seo": {
+    "metatags": {
+      "title": "Documentation | Symplr",
+      "description": "Build and manage apps with Symplr. Guides and documentation.",
+      "keywords": "symplr documentation, build apps with AI, app development guides, AI app builder docs"
+    }
+  },
   "navigation": {
     "tabs": [
       {
