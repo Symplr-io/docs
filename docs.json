@@ -70,7 +70,8 @@
             "group": "Security & Reliability",
             "pages": [
               "mobile-app-security"
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Get Help",
