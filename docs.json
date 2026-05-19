@@ -40,8 +40,7 @@
               "screen-library",
               "workflows-and-apis",
               "themes-and-customization"
-            ],
-            "hidden": true
+            ]
           },
           {
             "group": "Build & Test Application",
