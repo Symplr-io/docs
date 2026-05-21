@@ -103,5 +103,8 @@
   "logo": {
     "light": "/images/Logo3.png",
     "dark": "/images/Logo3.png"
+  },
+  "appearance": {
+    "default": "system"
   }
 }
