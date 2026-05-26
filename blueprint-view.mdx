@@ -34,11 +34,13 @@ Each rectangle within the blueprint represents an individual application screen.
 
 Connections between screens represent navigation actions and user flow within the application.
 
+Navigation connectors may also display interaction names such as `onPress`, helping identify the action that triggers the navigation flow.
+
 <Frame>
   ![2 Screen Navigation Flow](/images/2-Screen-Navigation-Flow.jpg)
 </Frame>
 
-Navigation paths display how users move between screens based on configured actions such as button presses and interactions.
+Navigation paths display how users move between connected screens based on configured interactions.
 
 The blueprint structure helps visualize:
 
@@ -82,7 +84,7 @@ Symplr displays the **Add to Storyboard** dialog.
   ![6 Add To Story Board Popup](/images/6-Add-to-Story-Board-popup.jpg)
 </Frame>
 
-The storyboard options allow additional application elements to be connected to the selected screen.
+The storyboard options allow additional application elements to be connected directly to the selected screen.
 
 Available connection types include:
 
@@ -101,6 +103,16 @@ Use the **Screen** option to connect existing screens or create new application 
 
 Additional screens extend the navigation structure and application flow.
 
+### Add Decisions
+
+Use the **Decision** option to create branching logic and conditional navigation paths within the application flow.
+
+<Frame>
+  ![8 Add Decision Option](/images/8-Add-Decision-option.jpg)
+</Frame>
+
+Decisions help define multiple flow outcomes based on user actions, validations, or application conditions.
+
 ### Add User Journeys
 
 Use the **User Journey** option to connect reusable user flows and interaction sequences to the application.
@@ -111,18 +123,21 @@ Use the **User Journey** option to connect reusable user flows and interaction s
 
 User Journeys help organize larger application flows and reusable interaction patterns.
 
-### Add Decisions and Workflows
+### Add Workflows
 
-Blueprint View also supports connecting Decisions and Workflows to extend application logic and behavior.
+Use the **Workflow** option to connect reusable workflows and backend-related processes to the application.
 
-- **Decision** — Adds branching logic and conditional flow paths
-- **Workflow** — Connects reusable workflows and API-related processes
+<Frame>
+  ![10 Add New Workflow](/images/10-Add-new-Workflow.png)
+</Frame>
 
-These connections help extend application functionality directly from the blueprint structure.
+Workflows can be used to connect API operations, reusable business logic, external integrations, and backend processing steps.
+
+The workflow catalogue allows available workflows to be searched and connected directly to the application flow.
 
 ## Manage Screens
 
-Additional screen management actions are available from the three-dot menu on each screen card.
+Additional screen management options are available from the three-dot menu on each screen card.
 
 <Frame>
   ![11 Three Dots](/images/11-Three-Dots.jpg)
@@ -164,7 +179,7 @@ These capabilities support application generation, testing, collaboration, confi
 Blueprint View includes workspace navigation and canvas controls to help manage large application structures.
 
 <Frame>
-  ![14 Works Space Control](/images/14-works-space-control.jpg)
+  ![14 Workspace Controls](/images/14-works-space-control.jpg)
 </Frame>
 
 Available workspace controls include:
