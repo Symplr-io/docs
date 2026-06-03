@@ -2,3 +2,114 @@
 title: "GitHub Integration"
 hidden: true
 ---
+
+GitHub Integration allows generated application code to be pushed directly from Symplr to a connected GitHub repository, enabling source code management, collaboration, version control, and continued development outside the platform.
+
+After connecting a GitHub account, Symplr can generate the latest application build and push the generated source code to the connected GitHub repository.
+
+## Before You Begin
+
+Before using GitHub Integration, ensure:
+
+- A GitHub account is available
+- The application structure is finalized in Blueprint View
+- Required code generation options are configured in Developer Tools
+- The application is ready to be pushed to GitHub
+
+## Connect a GitHub Account
+
+Open the **Developer Tools** menu from the top-right corner of the Blueprint View and click the **Connect** button under **Connect GitHub**.
+
+<Frame>
+  ![1 Access Git Hub Integration New](/images/1-Access-GitHub-Integration-New.jpg)
+</Frame>
+
+Symplr displays a confirmation dialog explaining that GitHub authorization is required before code can be pushed to a repository.
+
+<Frame>
+  ![2 Git Hub Connection Screen](/images/2-GitHub-Connection-Screen.jpg)
+</Frame>
+
+Click **Continue** to proceed to GitHub authorization.
+
+## Sign In to GitHub
+
+If you are not already signed in to GitHub, enter your GitHub credentials and sign in.
+
+<Frame>
+  ![3 Git Hub Login Prompt](/images/3-GitHub-login-prompt.jpg)
+</Frame>
+
+If Two-Factor Authentication (2FA) is enabled on the GitHub account, complete the verification process when prompted.
+
+<Frame>
+  ![4 Two Factor Integration](/images/4-two-factor-integration.jpg)
+</Frame>
+
+After successful authentication, GitHub displays the authorization page for Symplr.
+
+## Authorize Symplr Access
+
+Review the requested permissions and click **Authorize Symplr-io** to grant access.
+
+<Frame>
+  ![5 Git Hub Authorization](/images/5-GitHub-Authorization.jpg)
+</Frame>
+
+GitHub authorization allows Symplr to securely push generated application code to GitHub on your behalf.
+
+After authorization completes successfully, Symplr displays a confirmation message.
+
+<Frame>
+  ![6 Successful Connection](/images/6-Successful-Connection.jpg)
+</Frame>
+
+Once connected, the **Connect** button changes to **Push**, indicating that GitHub Integration is ready for use.
+
+<Frame>
+  ![7 Button Changes To Push](/images/7-button-changes-to-Push.jpg)
+</Frame>
+
+## Push Code to GitHub
+
+After GitHub is connected successfully, generated application code can be pushed directly to the connected repository.
+
+<Frame>
+  ![8 Git Hub Code Push](/images/8-GitHub-Code-Push.jpg)
+</Frame>
+
+The **Push Code to GitHub** dialog displays:
+
+- Repository name
+- Branch name
+- Selected code generation features
+- Test case generation settings
+- Security feature settings
+
+Review the repository details, selected generation options, and branch name. Update the branch name if required before continuing.
+
+Click **Continue** to start the code push process.
+
+## Confirm the Push Request
+
+After the push request is submitted, Symplr displays a confirmation message indicating that the process has started.
+
+<Frame>
+  ![9 Code Push Started Confirmation](/images/9-Code-Push-Started-Confirmation.jpg)
+</Frame>
+
+Symplr generates the latest application build and pushes the generated source code to the connected GitHub repository.
+
+## Receive Push Confirmation
+
+Once the push process completes successfully, Symplr sends a confirmation email to the registered email address.
+
+<Frame>
+  ![10 Code Push Email Confirmation](/images/10-Code-Push-Email-Confirmation.jpg)
+</Frame>
+
+The email confirms that the latest application changes have been pushed to GitHub successfully.
+
+## Next Steps
+
+After pushing code to GitHub, continue by cloning the repository, reviewing the generated source code, running the application locally, extending functionality, implementing customizations, or preparing the application for deployment.
