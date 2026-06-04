@@ -18,8 +18,6 @@ Symplr analyzes screens, layouts, components, and navigation from your design to
 
 By importing a Figma file URL, Symplr generates screens, layouts, components, and navigation from your design, allowing you to move from design to Blueprint View without manually rebuilding screens.
 
-The following video demonstrates the Figma import workflow in Symplr.
-
 Watch the short video below to see how Symplr transforms a Figma design into a working application.
 
 <Frame>
@@ -53,7 +51,7 @@ In just a few steps, Symplr converts your Figma design into a working applicatio
 
 After completing this flow, you will have:
 
-- A fully generated application built directly from your Figma design
+- A generated application structure created directly from your Figma design
 - Screens and navigation generated with precision
 - A working application ready for preview within Symplr or on your device
 
@@ -79,20 +77,6 @@ Symplr works best when your design is structured for clarity and scalability. A 
 
 <Warning>
   **Important:** Ensure your Figma file is accessible (e.g., _“Anyone with the link can view”_ or properly authorized), so Symplr can process it without interruptions.
-</Warning>
-
-## Figma Import Limitations
-
-Symplr relies on Figma APIs to access design files and assets during the import process. Certain limitations imposed by Figma may affect imports, particularly when using Free or View-only Figma accounts.
-
-<Warning>
-  **Figma API Limitations**
-
-  - Free and View-only Figma accounts are subject to Figma API rate limits. As a result, the same Figma project can only be imported a limited number of times within a given period.
-  - If the rate limit is exceeded, repeated imports may fail or return incomplete results until the limit resets.
-  - When importing projects that contain a large number of images, Free and View-only Figma accounts may experience missing images during import.
-  - This issue is more likely to occur during repeated imports of the same project due to Figma API throttling and asset retrieval limits.
-  - If images are missing after import, wait before reattempting the import or consider using a Figma account with higher API limits.
 </Warning>
 
 ## Import Your Figma Design
@@ -194,6 +178,31 @@ With a few adjustments, you can improve application structure alignment and main
   ![Image](/images/image-40.png)
 </Frame>
 
+## Figma Import Limitations
+
+Symplr relies on Figma APIs to access design files and assets during the import process. Certain limitations imposed by Figma may affect imports, particularly when using Free or View-only Figma accounts.
+
+<Warning>
+  **Figma API Limitations**
+
+  - Free and View-only Figma accounts are subject to Figma API rate limits. As a result, the same Figma project can only be imported a limited number of times within a given period.
+  - If the rate limit is exceeded, imports may fail or return incomplete results until the limit resets.
+  - When importing projects that contain a large number of images, Free and View-only Figma accounts may experience missing images during import.
+  - This issue is more likely to occur during repeated imports of the same project due to Figma API throttling and asset retrieval limits.
+  - If images are missing after import, wait before reattempting the import or consider using a Figma account with higher API limits.
+  - For additional information about Figma API rate limits, see the official Figma Rate Limits documentation. [Rate limits](https://developers.figma.com/docs/rest-api/rate-limits/)
+</Warning>
+
+### Example Rate Limit Error
+
+If a Figma rate limit is reached, Symplr may display an error similar to the following:
+
+<Frame>
+  ![Image 63](/images/image-63.png)
+</Frame>
+
+This message indicates that a Figma API rate limit has been reached and additional imports may need to be delayed until the limit resets. In some cases, creating a copy of the Figma file and importing the copy may help avoid the restriction.
+
 ## Review Generated Screens
 
 Once the import is complete, Symplr displays the generated screens and navigation structure within Blueprint View.
@@ -244,7 +253,7 @@ Test functionality, validate user flows, and experience your application in acti
 
 ### Run in Symplr
 
-Run the application directly within Symplr without additional environment configuration. With Symplr, you can compile and run your application directly within the platform.
+Compile and run the generated application directly within Symplr without requiring additional local environment configuration.
 
 ### Build Process
 
@@ -327,7 +336,7 @@ Once connected, the application loads directly on your device for testing and va
 
 Once the application is running, review the following areas:
 
-- **Review every screen** to ensure layouts and UI elements render perfectly
+- **Review every screen** to ensure layouts and UI elements render correctly
 - **Interact with buttons and controls** to confirm responsiveness
 - **Navigate between screens** to validate flow and user journeys
 - Ensure the overall experience is **responsive and aligned with the original design**
