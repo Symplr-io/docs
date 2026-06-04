@@ -86,21 +86,13 @@ Symplr works best when your design is structured for clarity and scalability. A 
 Symplr relies on Figma APIs to access design files and assets during the import process. Certain limitations imposed by Figma may affect imports, particularly when using Free or View-only Figma accounts.
 
 <Warning>
-  **Figma API Rate Limits**
+  **Figma API Limitations**
 
-  Free and View-only Figma accounts are subject to Figma API rate limits. As a result, the same Figma project can only be imported a limited number of times within a given period.
-
-  If the rate limit is exceeded, repeated imports may fail or return incomplete results until the limit resets.
-</Warning>
-
-<Warning>
-  **Large Files and Missing Images**
-
-  When importing Figma projects that contain a large number of images, Free and View-only Figma accounts may experience missing images during import.
-
-  This issue is more likely to occur during repeated imports of the same project due to Figma API throttling and asset retrieval limits.
-
-  If images are missing after import, wait before reattempting the import or consider using a Figma account with higher API limits.
+  - Free and View-only Figma accounts are subject to Figma API rate limits. As a result, the same Figma project can only be imported a limited number of times within a given period.
+  - If the rate limit is exceeded, repeated imports may fail or return incomplete results until the limit resets.
+  - When importing projects that contain a large number of images, Free and View-only Figma accounts may experience missing images during import.
+  - This issue is more likely to occur during repeated imports of the same project due to Figma API throttling and asset retrieval limits.
+  - If images are missing after import, wait before reattempting the import or consider using a Figma account with higher API limits.
 </Warning>
 
 ## Import Your Figma Design
