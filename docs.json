@@ -54,7 +54,8 @@
             "pages": [
               "code-generation-settings",
               "download-code",
-              "run-applications-locally"
+              "run-applications-locally",
+              "react-native-software-tools-and-version-compatibility"
             ]
           },
           {
